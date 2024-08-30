@@ -47,7 +47,7 @@ def hello_world():
 def goodbye_world():
     """Print "Goodbye, world!"."""
     pass
-
+    print("Goodbye, world!")
 
 # This is a function, with an optional argument ``entity`` which has a
 # default value of "world".  It will print "Hello, {entity}!" where
@@ -67,7 +67,7 @@ def goodbye_world():
 #
 # Then, change the ellipsis in the print statement below to print
 # ``entity``.
-def hello(entity=...):
+def hello(entity="world"):
     """Says hello to ``entity``.
 
     Says hello to ``entity``.
@@ -81,15 +81,15 @@ def hello(entity=...):
     -------
         ``None``.
     """
-    print("Hello, " + ... + "!")
+    print("Hello, (entity)!")
 
 
 # Copy and modify the ``hello`` function above so that it says
 # "Goodbye" instead of hello.
-def goodbye(entity=...):
+def goodbye(entity="world"):
     """Says goodbye to ``entity``."""
     pass
-
+    print("Goodbye, (entity)!")
 
 # DO NOT MAKE MODIFICATIONS BELOW THIS LINE.
 # Feel free to read, though.
